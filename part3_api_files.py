@@ -330,3 +330,102 @@ try:
         print(file.read().strip())
 except FileNotFoundError:
     print("Error: Log file was not created.")
+
+
+
+#Output
+
+
+
+"""
+✓ File written successfully.
+✓ Lines appended successfully.
+
+--- Reading File Content ---
+1. Topic 1: Variables store data. Python is dynamically typed.
+2. Topic 2: Lists are ordered and mutable.
+3. Topic 3: Dictionaries store key-value pairs.
+4. Topic 4: Loops automate repetitive tasks.
+5. Topic 5: Exception handling prevents crashes.
+6. Topic 6: Functions wrap logic into reusable blocks of code.
+7. Topic 7: File I/O allows data to persist even after the program closes.
+
+Total number of lines: 7
+
+Enter a keyword to search for: hello
+
+--- Search Results for 'hello' ---
+No matches found for the keyword 'hello'. Try another word!
+--- Step 1: Top 20 Products ---
+ID   | Title                          | Category        | Price    | Rating
+------------------------------------------------------------------------
+1    | Essence Mascara Lash Princess  | beauty          | $9.99    | 2.56
+2    | Eyeshadow Palette with Mirror  | beauty          | $19.99   | 2.86
+3    | Powder Canister                | beauty          | $14.99   | 4.64
+4    | Red Lipstick                   | beauty          | $12.99   | 4.36
+5    | Red Nail Polish                | beauty          | $8.99    | 4.32
+6    | Calvin Klein CK One            | fragrances      | $49.99   | 4.37
+7    | Chanel Coco Noir Eau De        | fragrances      | $129.99  | 4.26
+8    | Dior J'adore                   | fragrances      | $89.99   | 3.8
+9    | Dolce Shine Eau de             | fragrances      | $69.99   | 3.96
+10   | Gucci Bloom Eau de             | fragrances      | $79.99   | 2.74
+11   | Annibale Colombo Bed           | furniture       | $1899.99 | 4.77
+12   | Annibale Colombo Sofa          | furniture       | $2499.99 | 3.92
+13   | Bedside Table African Cherry   | furniture       | $299.99  | 2.87
+14   | Knoll Saarinen Executive Confe | furniture       | $499.99  | 4.88
+15   | Wooden Bathroom Sink With Mirr | furniture       | $799.99  | 3.59
+16   | Apple                          | groceries       | $1.99    | 4.19
+17   | Beef Steak                     | groceries       | $12.99   | 4.47
+18   | Cat Food                       | groceries       | $8.99    | 3.13
+19   | Chicken Meat                   | groceries       | $9.99    | 3.19
+20   | Cooking Oil                    | groceries       | $4.99    | 4.8
+
+--- Step 2: High-Rated Products (>= 4.5), Sorted by Price (Desc) ---
+Annibale Colombo Bed - $1899.99 (Rating: 4.77)
+Knoll Saarinen Executive Conference Chair - $499.99 (Rating: 4.88)
+Powder Canister - $14.99 (Rating: 4.64)
+Cooking Oil - $4.99 (Rating: 4.8)
+
+--- Step 3: Laptops Category ---
+Laptop: Apple MacBook Pro 14 Inch Space Grey | Price: $1999.99
+Laptop: Asus Zenbook Pro Dual Screen Laptop | Price: $1799.99
+Laptop: Huawei Matebook X Pro | Price: $1399.99
+Laptop: Lenovo Yoga 920 | Price: $1099.99
+Laptop: New DELL XPS 13 9300 Laptop | Price: $1499.99
+
+--- Step 4: Add New Product (POST Request) ---
+Server Response Status Code: 201
+Server JSON Response:
+{'id': 195, 'title': 'My Custom Product', 'price': 999, 'description': 'A product I created via API', 'category': 'electronics'}
+--- Part A: Guarded Calculator ---
+10 / 2   = 5.0
+10 / 0   = Error: Cannot divide by zero
+'ten'/ 2 = Error: Invalid input types
+
+--- Part B: Guarded File Reader ---
+File operation attempt complete.
+✓ Success. Read 365 characters.
+
+Error: File 'ghost_file.txt' not found.
+File operation attempt complete.
+
+--- Part C: Robust API Call Example ---
+✓ Robust API connection successful.
+
+--- Part D: Product Lookup Loop ---
+Enter a product ID to look up (1–100), or 'quit' to exit: 35
+✓ Found: Potatoes - $2.29
+
+Enter a product ID to look up (1–100), or 'quit' to exit: quit
+Exiting product lookup. Goodbye!
+Attempting to connect to a non-existent host...
+❌ ConnectionError caught! Logging it...
+
+Attempting to lookup product ID 999...
+❌ HTTP 404 received! Logging it...
+
+--- Final Contents of error_log.txt ---
+[2026-04-05 22:03:17] ERROR in fetch_products: ConnectionError — No connection could be made
+[2026-04-05 22:03:18] ERROR in lookup_product: HTTPError — 404 Not Found for product ID 999
+[2026-04-05 22:20:32] ERROR in fetch_products: ConnectionError — No connection could be made
+[2026-04-05 22:20:32] ERROR in lookup_product: HTTPError — 404 Not Found for product ID 999"""
